@@ -14,7 +14,6 @@ try {
   const configPath = path.join(__dirname, 'config.json');
   const configContent = fs.readFileSync(configPath, 'utf8');
   config = JSON.parse(configContent);
-  console.log('✅ Конфигурация загружена успешно!');
   console.log(`📧 Почтовый ящик: ${config.emailSettings.email}`);
   console.log(`📋 Поставщиков: ${config.suppliers.length}`);
 } catch (error) {
