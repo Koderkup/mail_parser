@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const path = require('path');
 const Imap = require('imap');
@@ -21,6 +20,7 @@ try {
   console.log(
     '⚠️  Убедитесь, что файл config.json существует и имеет правильный формат.',
   );
+
   process.exit(1);
 }
 
