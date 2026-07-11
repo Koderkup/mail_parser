@@ -1,0 +1,26 @@
+{
+  "name": "mail_parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Koderkup/mail_parser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Koderkup/mail_parser/issues"
+  },
+  "homepage": "https://github.com/Koderkup/mail_parser#readme",
+  "dependencies": {
+    "adm-zip": "^0.6.0",
+    "emailjs-imap-client": "^3.1.0",
+    "xlsx": "^0.18.5"
+  }
+}
