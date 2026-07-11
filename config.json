@@ -1,3 +1,14 @@
 {
-    
+  "emailSettings": {
+    "email": "itlearn.ku@gmail.com",
+    "password": "ibap gdyv iacj aekb",
+    "imapServer": "imap.gmail.com",
+    "port": 993
+  },
+  "suppliers": [
+    {
+      "name": "Koderkup",
+      "email": "coderkup@gmail.com"
+    }
+  ]
 }
