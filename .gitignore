@@ -1,3 +1,23 @@
-/node_modules
-*node_modules
-node_modules
+# Настройки пользователя
+config.json
+*.local.json
+
+# Папки с зависимостями
+node_modules/
+
+# Файлы логов
+*.log
+
+# Сборки
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+secret.notes

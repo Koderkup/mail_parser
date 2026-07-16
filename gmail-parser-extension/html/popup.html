@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Parser</title>
+    <link rel="stylesheet" href="../css/popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📬 Gmail Parser</h1>
+            <span class="version">v1.0</span>
+        </header>
+
+        <!-- Статус -->
+        <div id="statusBar" class="status-bar">
+            <span class="status-dot ready"></span>
+            <span id="statusText">Готов к работе</span>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- НАСТРОЙКИ ПОЧТЫ -->
+        <!-- ============================================ -->
+        <section>
+            <h2>📧 Настройки почты</h2>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="your-email@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="password">Пароль приложения (App Password)</label>
+                <input type="password" id="password" placeholder="xxxx xxxx xxxx xxxx">
+            </div>
+            <div class="form-group">
+                <label for="imapServer">IMAP сервер</label>
+                <input type="text" id="imapServer" placeholder="imap.gmail.com" value="imap.gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="port">Порт</label>
+                <input type="number" id="port" placeholder="993" value="993">
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- НАСТРОЙКА КОЛОНОК -->
+        <!-- ============================================ -->
+        <section>
+            <h2>📊 Настройка колонок</h2>
+            <p class="hint">Укажите названия колонок в вашем Excel-файле</p>
+            <div class="column-grid">
+                <div class="form-group">
+                    <label for="colBrand">Бренд / Марка</label>
+                    <input type="text" id="colBrand" placeholder="Бренд" value="Бренд">
+                </div>
+                <div class="form-group">
+                    <label for="colArticle">Артикул / Номер</label>
+                    <input type="text" id="colArticle" placeholder="Артикул" value="Артикул">
+                </div>
+                <div class="form-group">
+                    <label for="colName">Наименование</label>
+                    <input type="text" id="colName" placeholder="Наименование" value="Наименование">
+                </div>
+                <div class="form-group">
+                    <label for="colPrice">Цена / Стоимость</label>
+                    <input type="text" id="colPrice" placeholder="Цена" value="Цена">
+                </div>
+                <div class="form-group" style="grid-column: span 2;">
+                    <label for="colQuantity">Количество / Остаток</label>
+                    <input type="text" id="colQuantity" placeholder="Количество" value="Количество">
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ПОСТАВЩИКИ -->
+        <!-- ============================================ -->
+        <section>
+            <h2>🏢 Поставщики</h2>
+            <p class="hint">Добавьте email-адреса, с которых приходят прайсы</p>
+            <div id="supplierList">
+                <!-- Поля создаются через JS -->
+            </div>
+            <button id="addSupplier" class="btn-add">+ Добавить поставщика</button>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ДЕЙСТВИЯ -->
+        <!-- ============================================ -->
+        <section class="actions">
+            <div class="action-group">
+                <button id="saveBtn" class="btn-save">💾 Сохранить</button>
+                <span class="action-hint">Сохранить все настройки</span>
+            </div>
+            <div class="action-group">
+                <button id="startBtn" class="btn-start">🚀 Запустить</button>
+                <span class="action-hint">Начать обработку писем</span>
+            </div>
+            <div class="action-group">
+                <button id="clearBtn" class="btn-clear">🗑️ Очистить</button>
+                <span class="action-hint">Удалить все настройки</span>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- ЛОГ -->
+        <!-- ============================================ -->
+        <section class="log-section">
+            <h3>📋 Лог</h3>
+            <div id="logContainer"></div>
+        </section>
+    </div>
+
+    <script src="../js/popup.js"></script>
+</body>
+</html>

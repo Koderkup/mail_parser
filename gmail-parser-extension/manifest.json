@@ -2,18 +2,19 @@
   "manifest_version": 3,
   "name": "Gmail Parser - Price lists",
   "version": "1.0.0",
+  "key": "A0jwKsUuAmOt6ynEXB9PI1J/ZiPlHuf5T9VQM8M+LJ2AAHHdAgMBAAECggEAG0hdLZt5j+u2swNmcNhZxeZ5B/gPUkwt7P8oT5wnbLsuNnNfQ9RyrW0s5phGiHs61AvfHbwUrcAQiFo+M/6qShI1IajRKFh1MCibZO2+PmpmxppNkC/FxkHZvnB8+0nQ99gIW8QdkbDj8uyJgI4aemXyZQtd09bZMF0+cbM3peYeElSZg3hxEPEd+cAFiQVPTb9Ad5XfcRPu4/9up5c2HhXHwEJRN3ZroPyCEJbjCpU+jc1W6GT5mjv/xCt8/ofSD1xGVX3MC2G1NRoth2+F3CEd4WkgP8QQhV5f85qHlltjDuGinxCJIuCLUrgwbF2uNldzFT1Ev/LRX1gBPs0O/QKBgQDf7cKdtsbSEz9qmgmr8V0NSzDMCyEL+xTW3dlRLKeQSVglSYtyY5Zrr48378HupJmHWKP7Jx+ykzrw2ULylzPgVax9AfmrgxXUZs2h2IJSl1j1sfyFeg84JtA5EWrqvYR0x8UGfSGK1bX+gnnJZAs1AbZujAu7sSUcglR4NV4V1wKBgQDJVI+ojUMYllz0TFhxELynReuaP31NrA/lXyt4n6t1ETq+1WssFV1GfmQD61BlVor5fvIdzO7DQHyK2te++FhqYtH/YW8972BRo1T8Vrwg9oz12YckxZ8SnI/4/rUIHo34zGPnZbVRfSrzm+KRCQwMaeJS7rtwdCDZDqnc2yEXawKBgH3Aw/5V2qm27XIsNyo8TYldpHWx+kkEI9vWkmgnr6IzzjCCcLE4hAzNdpxvJHWkMiPz/4LXodFjJUKEgDhD+XoOIuPA7DkJUIULhodRUz6Wh/rSjYFX3pwmD+E8itJww6XhWiAevWt+QMpA86vJZxHJeG30b9Jj1PeBqXYoYkHZAoGADw8aJ7tZN2+XyFYlj193HPPn6YOyNasXDUsPD1iyFHGTeU6xU3zNm0Y86OYi/1F3162dIol/mm8qYaB43rnosxxtJLL/BRzwkWqsIqvCKp0GciUxLJjziwrW4gL7O349lEyFdHtxEoVQPyR7z+ljU1JgMV/V+VVWV6X3IqPpV70CgYAC1CEVh64HOo9yQu0wWNrWpofD8e3QHXC21ikKkQmcpunwsXCWoJ4YGgyxdfQEZn3LDi+md+VS5byCMpPCEMZnuOuD8ygcLzFBU1ABw6bqzChcSSgGkCuJVl2hDQXONtPOfpX1/L+ibfCJTj4wBnaamkQ4xGbztMuuv0DoaoN72g==",
   "description": "Automatic processing of price lists from Gmail",
   "permissions": ["identity", "storage", "downloads"],
   "host_permissions": ["https://www.googleapis.com/*"],
   "oauth2": {
-    "client_id": "YOUR_CLIENT_ID.apps.googleusercontent.com",
+    "client_id": "438935816838-4ph4tm0fpbdg4aajcii99higvc8vfb40.apps.googleusercontent.com",
     "scopes": ["https://www.googleapis.com/auth/gmail.readonly"]
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "js/background.js"
   },
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "html/popup.html",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
